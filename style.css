@@ -22,7 +22,7 @@
 #container {
     position: absolute;
     left: 50%;
-    top: 50%;
+    top: 78%;
     padding: 10px;
     transform: translate(-50%, -50%);
     border-radius: 5px;
@@ -38,10 +38,4 @@ h1 {
     font-family: 'Roboto', sans-serif;
 }
 
-#hello {
-    position: relative;
-    top: 25%;
-    color: white;
-    
-}
 
