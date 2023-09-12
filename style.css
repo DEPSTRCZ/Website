@@ -10,6 +10,15 @@
     z-index: -1;
 }
 
+#background-gradient {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: rgb(0,0,0);
+    background: radial-gradient(circle, rgba(0,0,0,0.9389005602240896) 0%, rgba(0,0,0,0.050945378151260545) 100%);
+}
+
 #container {
     position: absolute;
     left: 50%;
@@ -25,16 +34,14 @@
     
 }
 
+h1 {
+    font-family: 'Roboto', sans-serif;
+}
+
 #hello {
+    position: relative;
+    top: 25%;
     color: white;
     
 }
 
-#test {
-    position: absolute;
-    display: block;
-    width: 100%;
-    height: 100%;
-    background: rgb(0,0,0);
-    background: radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(0,0,0,0.48511904761904767) 100%);
-}
