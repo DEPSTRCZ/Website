@@ -58,13 +58,14 @@ p {
     top: 18%;
     align-items: center;
     justify-content: center;
-    background-color: yellowgreen;
-
 }
-.icons {
+.sicons {
     width: 30px;
-    height: 30px;
-    color: white;
+    height: 30px;   
     fill: white;
-    background-color: aliceblue;
+    text-decoration: none;
+}
+
+#discordLink {
+    fill: white;
 }
