@@ -16,7 +16,7 @@
     width: 100%;
     height: 100%;
     background: rgb(0,0,0);
-    background: radial-gradient(circle, rgba(0,0,0,0.9444152661064426) 0%, rgba(0,0,0,0.37298669467787116) 100%);
+    background: radial-gradient(circle, rgba(0, 0, 0, 0.944) 0%, rgba(0,0,0,0.37298669467787116) 100%);
 }
 
 .NotifySpace {
@@ -42,11 +42,11 @@
     z-index: 3;
     padding: 6pt;
     border-color: green;
-    border-width: 2pt;
+    border-width: 1px;
     border-style: solid;
-    box-shadow: 0 0 .2rem #fff,
-    0 0 0.8rem #10ff87,
-    inset 0 0 1.3rem #2bff9599;
+    box-shadow: 
+    0 0 0.2rem #10ff87,
+    inset 0 0 1.3rem #2bff9599; 
 
     transition: top 0.5s ease-in-out, opacity 0.5s ease-in-out;
 }
@@ -57,10 +57,12 @@
 }
 .NotifyText {
     color: #e7e7e7;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
 }
 
 .NotifyIcon {
-    color: rgb(40, 209, 99);
+    color: rgb(8, 222, 65);
     font-size: 20pt;
     padding: 5pt;
 }
@@ -108,17 +110,18 @@ p {
     width: 100%;
 
 }
-.icons { 
+.icon { 
     position: relative;
     color: white;
   
+    opacity: 0;
     font-size: 30pt;
+    margin-left: 4pt;
+    margin-right: 4pt;
+    transform: translateY(20%);
+    transition: transform 1s ease, opacity 1s ease;
     
-}
-.iconSpace{
- margin-left: 4pt;
- margin-right: 4pt;
- 
+
 }
 
 #discordLink {
@@ -130,4 +133,31 @@ a {
     text-decoration: none;
     user-select: none;
     
+}
+i:hover {
+    color: rgb(8, 222, 65);
+    cursor: pointer;
+    transition: color 0.5s ease-in-out;
+}
+
+
+.wave {
+    /*Copyright (c) 2023 by Jake Jarvis (https://codepen.io/jakejarvis/pen/pBZWZw)*/
+
+    animation-name: wave-animation;  /* Refers to the name of your @keyframes element below */
+    animation-duration: 2.5s;        /* Change to speed up or slow down */
+    animation-iteration-count: infinite;  /* Never stop waving :) */
+    transform-origin: 70% 70%;       /* Pivot around the bottom-left palm */
+    display: inline-block;
+  }
+  
+  @keyframes wave-animation {
+      0% { transform: rotate( 0.0deg) }
+     10% { transform: rotate(14.0deg) }  /* The following five values can be played with to make the waving more or less extreme */
+     20% { transform: rotate(-8.0deg) }
+     30% { transform: rotate(14.0deg) }
+     40% { transform: rotate(-4.0deg) }
+     50% { transform: rotate(10.0deg) }
+     60% { transform: rotate( 0.0deg) }  /* Reset for the last half to pause */
+    100% { transform: rotate( 0.0deg) }
 }

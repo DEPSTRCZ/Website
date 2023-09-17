@@ -1,4 +1,20 @@
+function ShowIcons() {
+        
+    const icons = document.querySelectorAll(".icon");
+
+    icons.forEach((icon, index) => {
+        setTimeout(() => {
+            icon.style.transform = "translateY(0)";
+            icon.style.opacity = "1";
+        }, index * 250);
+    });
+}
+
+
 document.addEventListener("DOMContentLoaded", () => {
+    ShowIcons();
+    document.getElementById("hello").innerHTML = `<span class="wave">👋</span>`
+
     document.getElementById("discord").addEventListener("click", async () => {
         try {
             await navigator.clipboard.writeText("depstr");
@@ -12,4 +28,12 @@ document.addEventListener("DOMContentLoaded", () => {
             console.error('Failed to copy: ', err);
         }
     });
+
+
+    const ActivitiesStates = ["Programmer", "Discord Bot Developer",  ]
+
+    setInterval(async() => {
+
+    }, 5000);
+
 });
