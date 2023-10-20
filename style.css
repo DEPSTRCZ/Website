@@ -1,6 +1,8 @@
 *{
     padding:0;
     margin:0;
+    text-decoration: none;
+    user-select: none;
   }
 
 #background-animated {
@@ -84,16 +86,18 @@
     
 }
 
-h1 {
+#hello {
     font-size: 400%;
     color: white;
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
+    transition: top 0.5s ease-in-out, opacity 0.5s ease-in-out;
+
 }
 #Nick {
     color: rgb(8, 222, 65);
 }
-h2 {
+#ActivitiesStates {
     color: white;
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
@@ -108,6 +112,8 @@ p {
     justify-content: center;
     top: 6%;
     width: 100%;
+    user-select: none;
+    text-align: none;
 
 }
 .icon { 
@@ -119,8 +125,7 @@ p {
     margin-left: 4pt;
     margin-right: 4pt;
     transform: translateY(20%);
-    transition: transform 1s ease, opacity 1s ease;
-    
+    transition: transform 1s ease, opacity 1s ease;    
 
 }
 
@@ -129,11 +134,6 @@ p {
 }
 
 
-a {
-    text-decoration: none;
-    user-select: none;
-    
-}
 i:hover {
     color: rgb(8, 222, 65);
     cursor: pointer;
