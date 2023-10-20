@@ -34,7 +34,7 @@ document.addEventListener("DOMContentLoaded", async () => {
         
         
 
-    }, 2500);
+    }, 2100);
 
 
     document.getElementById("discord").addEventListener("click", async () => {
