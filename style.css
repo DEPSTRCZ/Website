@@ -4,84 +4,19 @@
     text-decoration: none;
     user-select: none;
     background-color: rgb(80, 80, 80);
-  }
-
-#background-animated {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
 }
 
-#background-gradient {
-    position: absolute;
-    display: block;
-    width: 100%;
-    height: 100%;
-    background: rgb(0,0,0);
-    background: radial-gradient(circle, rgba(0, 0, 0, 0.944) 0%, rgba(0,0,0,0.37298669467787116) 100%);
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgb(80, 80, 80);
 }
 
-
-.page-container {
-    position: relative;
-    display: block;
-    width: 100%;
-    height: 100%;
-    background-color: red;
-}
-
-#hello {
-    font-size: 400%;
-    color: white;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 400;
-    transition: top 0.5s ease-in-out, opacity 0.5s ease-in-out;
-
-}
-#Nick {
-    color: rgb(8, 222, 65);
-}
-#ActivitiesStates {
-    color: white;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 300;
-}
-p {
-    color: white;
-    font-family: 'Roboto', sans-serif;
-}
-
-.icons-cotnainer {
-    position: relative;
+/* Path: style.css */
+.main-page {
+    display: flex;
+    flex-direction: column;
     justify-content: center;
-    top: 6%;
-    width: 100%;
-    user-select: none;
-    text-align: none;
-
+    align-items: center;
+    background-color: rgb(80, 80, 80);
+    height: 100vh;
 }
-.icon { 
-    position: relative;
-    color: white;
-  
-    opacity: 0;
-    font-size: 30pt;
-    margin-left: 4pt;
-    margin-right: 4pt;
-    transform: translateY(20%);
-    transition: transform 1s ease, opacity 1s ease;    
-
-}
-
-#discordLink {
-    fill: white;
-}
-
-
-i:hover {
-    color: rgb(8, 222, 65);
-    cursor: pointer;
-    transition: color 0.5s ease-in-out;
-}
-
